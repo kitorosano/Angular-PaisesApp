@@ -23,7 +23,6 @@ export class PorCapitalComponent {
 
     this.paisService.buscarCapital(this.termino).subscribe({
       next: (paises) => {
-        console.log(paises)
         this.paises = paises;
       },
       error: (err) => {
